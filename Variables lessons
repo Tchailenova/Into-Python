@@ -1,0 +1,77 @@
+# To define an integer, use the following syntax:
+myint = 7
+print(myint)
+stars = "*"
+print(stars)
+
+
+# To define a floating point number, you may use one of the following notations:
+myfloat = 7.0
+print(myfloat)
+myfloat = float(7)
+print(myfloat)
+print(myfloat/2)
+mint = 7
+print(mint)
+print(mint/2)
+
+# Strings are defined either with a single quote or a double quotes.
+mystring = 'hello'
+print(mystring)
+mystring = "helli"
+print(mystring)
+
+# The difference between the two is that using double quotes makes it easy to include apostrophes
+# (whereas these would terminate the string if using single quotes)
+mystring = "Don't worry about apostrophes"
+print(mystring)
+
+# Simple operators can be executed on numbers and strings:
+one = 1
+two = 2
+three = one + two
+print(three)
+
+hello = "hello"
+world = "world"
+helloworld = hello + " " + world
+print(helloworld)
+
+# Assignments can be done on more than one variable "simultaneously" on the same line like this
+eyyy = 5
+dogg = 2
+a, b = 3, 4
+c, d = eyyy, dogg
+print(a,b)
+print(c+d)
+
+# Mixing operators between numbers and strings is not supported:
+one = 1
+two = 2
+hello = "hello"
+
+# This will not work!
+print(one + two + hello)
+
+# But this will!
+print(one, two, hello)
+
+
+# . . . . . . . . . . . . . . . . . . . . . . . . . .
+# The target of this exercise is to create a string, an integer, and a floating point number.
+# The string should be named mystring and should contain the word "hello".
+# The floating point number should be named myfloat and should contain the number 10.0,
+# and the integer should be named myint and should contain the number 20.
+# . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+mystring = "hello"
+myfloat = 10.0
+myint = 20
+
+# testing code
+if mystring == "hello":
+    print("String: %s" % mystring)
+if isinstance(myfloat, float) and myfloat == 10.0:
+    print("Float: %f" % myfloat)
+if isinstance(myint, int) and myint == 20:
+    print("Integer: %d" % myint)
